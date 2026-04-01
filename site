@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой простой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Мой сайт</h1>
+    <p>Простой пример без ТЗ</p>
+</header>
+
+<nav>
+    <a href="#">Главная</a>
+    <a href="#">О нас</a>
+    <a href="#">Контакты</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Добро пожаловать</h2>
+        <p>Это простой сайт, который ты можешь использовать как основу.</p>
+    </div>
+
+    <div class="card">
+        <h2>Интерактив</h2>
+        <button onclick="showMessage()">Нажми меня</button>
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Ты нажал кнопку 👍");
+    }
+</script>
+
+</body>
+</html>
